@@ -1,4 +1,4 @@
-package main
+package train
 
 import (
 	"fmt"
@@ -63,6 +63,7 @@ func (t *TrainMessage) getMax() string {
 		}
 		value -= int(v.weight)
 	}
+	// 到这里 说明 服务器的权重值一样 所以用轮训算法即可
 	return ""
 }
 
@@ -76,10 +77,4 @@ func (t *TrainMessage) GetTrainMessage()  {
 	fmt.Println("目标服务器为:", target)
 }
 
-func main() {
-	trainMessage := new(TrainMessage)
-	for i := 0; i < 50; i++ {
-		trainMessage.GetTrainMessage()
-	}
 
-}

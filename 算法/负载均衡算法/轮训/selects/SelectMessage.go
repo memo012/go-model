@@ -1,4 +1,4 @@
-package main
+package selects
 
 import (
 	"fmt"
@@ -21,16 +21,9 @@ func init() {
 type SelectMessage struct {
 }
 
-func (s  *SelectMessage) GetSelectStrategy() {
+func (s  *SelectMessage) GetSelectStrategy()  {
 	value := index % int64(len(list))
 	atomic.AddInt64(&index, 1)
 	fmt.Println(list[value])
 }
 
-func main() {
-	var sel *SelectMessage
-	for i := 0; i < 15; i++ {
-		sel = new(SelectMessage)
-		sel.GetSelectStrategy()
-	}
-}
