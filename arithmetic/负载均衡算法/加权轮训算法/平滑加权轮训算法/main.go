@@ -1,7 +1,7 @@
 package main
 
 import (
-	trains2 "designMode/算法/负载均衡算法/加权轮训算法/平滑加权轮训算法/trains"
+	trains2 "designMode/arithmetic/负载均衡算法/加权轮训算法/平滑加权轮训算法/trains"
 	"fmt"
 )
 

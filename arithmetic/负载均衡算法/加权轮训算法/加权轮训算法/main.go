@@ -1,6 +1,6 @@
 package main
 
-import "designMode/算法/负载均衡算法/加权轮训算法/加权轮训算法/train"
+import "designMode/arithmetic/负载均衡算法/加权轮训算法/加权轮训算法/train"
 
 func main() {
 	trainMessage := new(train.TrainMessage)

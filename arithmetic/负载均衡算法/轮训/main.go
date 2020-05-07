@@ -1,6 +1,6 @@
 package main
 
-import "designMode/算法/负载均衡算法/轮训/selects"
+import "designMode/arithmetic/负载均衡算法/轮训/selects"
 
 func main() {
 	var sel *selects.SelectMessage
